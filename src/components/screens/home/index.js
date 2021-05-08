@@ -1,6 +1,7 @@
 import React from 'react';
 import TabNavigator from '../../../navigation/TabNavigator';
 import {createStackNavigator} from '@react-navigation/stack';
+import Feed from '../../feed';
 
 const Stack = createStackNavigator();
 
@@ -11,9 +12,9 @@ export default function HomeScreen() {
       <Stack.Screen
         name={'Listing Details'}
         options={{headerShown: true}}
-        component={ItemScreen}
+        component={Feed}
       />
-      <Stack.Screen name={'categoryScreen'} component={CategoryScreen} />
+      {/* <Stack.Screen name={'categoryScreen'} component={CategoryScreen} />
       <Stack.Screen name={'AddConfirm'} component={addConfirm} />
       <Stack.Screen name={'SeeAll'} component={SeeAll} />
       <Stack.Screen
@@ -25,7 +26,7 @@ export default function HomeScreen() {
         options={{headerShown: true, headerBackTitle: ' '}}
         name={'ShowProfile'}
         component={ShowProfile}
-      />
+      /> */}
     </Stack.Navigator>
   );
 }

@@ -65,6 +65,7 @@
 		B5A61D810D75E9E8C094FFD7 /* libPods-LetsGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LetsGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAD8A88A0EA89FFF1B2FFD4 /* Pods-LetsGo-LetsGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo-LetsGoTests.release.xcconfig"; path = "Target Support Files/Pods-LetsGo-LetsGoTests/Pods-LetsGo-LetsGoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5E3BC0D2644F6830006CA85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5F4B99126463BA700238761 /* LetsGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LetsGo.entitlements; path = LetsGo/LetsGo.entitlements; sourceTree = "<group>"; };
 		E89474791DAD1566CF3D64E8 /* libPods-LetsGo-LetsGoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LetsGo-LetsGoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -127,6 +128,7 @@
 		13B07FAE1A68108700A75B9A /* LetsGo */ = {
 			isa = PBXGroup;
 			children = (
+				D5F4B99126463BA700238761 /* LetsGo.entitlements */,
 				D5E3BC0D2644F6830006CA85 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -779,6 +781,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LetsGo/LetsGo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9Q4T36JCD;
 				ENABLE_BITCODE = NO;
@@ -804,6 +807,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LetsGo/LetsGo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9Q4T36JCD;
 				INFOPLIST_FILE = LetsGo/Info.plist;

@@ -9,9 +9,14 @@ import {
 import {styles} from './styles';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import COLORS from '../../../utils';
+import {AppleButton} from '@invertase/react-native-apple-authentication';
+import {useContext} from 'react';
+import {AuthContext} from '../../../navigation/AuthProvider';
 
 export default function Login({navigation}) {
   const [number, setNumer] = useState();
+
+  const {appleSignIn} = useContext(AuthContext);
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.logoContainer}>
@@ -37,6 +42,19 @@ export default function Login({navigation}) {
             <Ionicons name="arrow-forward" size={40} color="black" />
           </TouchableOpacity>
         </View>
+      </View>
+      <View>
+        <AppleButton
+          buttonStyle={AppleButton.Style.WHITE}
+          buttonType={AppleButton.Type.SIGN_IN}
+          style={{
+            width: 160,
+            height: 45,
+          }}
+          onPress={() =>
+            appleSignIn().then(() => console.log('Apple sign-in complete!'))
+          }
+        />
       </View>
       <View style={styles.bottomMainContainer}>
         <SafeAreaView style={styles.bottomContainer}>
