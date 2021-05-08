@@ -1,8 +1,8 @@
 import React from 'react';
-import Login from './src/components/screens/login';
+import Providers from './src/navigation';
 
 const App = () => {
-  return <Login />;
+  return <Providers />;
 };
 
 export default App;
