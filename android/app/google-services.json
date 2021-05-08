@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "427326315977",
+    "firebase_url": "https://pipgram-f2570.firebaseio.com",
+    "project_id": "pipgram-f2570",
+    "storage_bucket": "pipgram-f2570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427326315977:android:c069b2a7c613812ce69c18",
+        "android_client_info": {
+          "package_name": "com.letsgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427326315977-pdhevn7o7ovdnfqdnmkbd7b7cs5fk60a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgOKcoZaDMrNkyZh-I_biGEoZtCTfLOAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427326315977-pdhevn7o7ovdnfqdnmkbd7b7cs5fk60a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "427326315977-1qg5r9leln9q7geotsbp2d3dt3brol7o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "stevenation.Social-App"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
